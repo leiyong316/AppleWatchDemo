@@ -18,14 +18,10 @@
 
 @implementation DetailInterfaceController
 
-
-- (instancetype)initWithContext:(id)context{
-    self = [super initWithContext:context];
-    if (self) {
-        [self setTitle:context];
-        [self.detailLabel setText:@"wkInterfaceLabel"];
-    }
-    return self;
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    [self setTitle:context];
+    [self.detailLabel setText:@"wkInterfaceLabel"];
 }
 
 - (void)willActivate{

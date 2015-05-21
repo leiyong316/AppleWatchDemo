@@ -18,23 +18,20 @@
 
 @implementation InterfaceController
 
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self){
-        self.datas = [NSMutableArray new];
-        for(int i=0; i<30; i++){
-            [self.datas addObject:[NSString stringWithFormat:@"test %d",i+1]];
-        }
-        [self.table setNumberOfRows:self.datas.count withRowType:@"leiyongcus"];
-        
-        for (int i=0; i<self.datas.count; i++) {
-            InterfaceRow *elementRow = [self.table rowControllerAtIndex:i];
-            [elementRow.label setText:self.datas[i]];
-        }
-        
-        NSLog(@"%@ initWithContext", self);
+- (void)awakeWithContext:(id)context {
+    [super awakeWithContext:context];
+    self.datas = [NSMutableArray new];
+    for(int i=0; i<30; i++){
+        [self.datas addObject:[NSString stringWithFormat:@"test %d",i+1]];
     }
-    return self;
+    [self.table setNumberOfRows:self.datas.count withRowType:@"leiyongcus"];
+    
+    for (int i=0; i<self.datas.count; i++) {
+        InterfaceRow *elementRow = [self.table rowControllerAtIndex:i];
+        [elementRow.label setText:self.datas[i]];
+    }
+    
+    NSLog(@"%@ initWithContext", self);
 }
 
 - (void)willActivate {

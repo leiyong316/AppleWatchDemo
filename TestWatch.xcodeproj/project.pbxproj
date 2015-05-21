@@ -676,6 +676,7 @@
 				DC8D1ACF1A1DBB2000E5820A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC8D1AD01A1DBB2000E5820A /* Build configuration list for PBXNativeTarget "TestWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +685,7 @@
 				DC8D1AD21A1DBB2000E5820A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC8D1AFA1A1DBB9500E5820A /* Build configuration list for PBXNativeTarget "TestWatch Watch App" */ = {
 			isa = XCConfigurationList;
@@ -692,6 +694,7 @@
 				DC8D1AFC1A1DBB9500E5820A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC8D1AFD1A1DBB9500E5820A /* Build configuration list for PBXNativeTarget "TestWatch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +703,7 @@
 				DC8D1AFF1A1DBB9500E5820A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
